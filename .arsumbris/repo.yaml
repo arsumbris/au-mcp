@@ -1,0 +1,9 @@
+# Schema-12 repo identity + deps (au.engine.repo). Transformed from the former
+# repo-registry.yaml (self -> name/description, peers -> deps) for the schema-12
+# cross-repo resolution redesign.
+type: au.engine.repo::au-engine
+name: au-mcp
+description: the kernel daemon — owns the mcp.tool.<tool> leaf defs (the
+  per-tool input vocabulary) for its first-party callable plugins
+deps:
+  - name: au-mcp-sdk
